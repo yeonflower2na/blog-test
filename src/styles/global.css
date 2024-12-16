@@ -1,0 +1,223 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif; /* 본고딕 적용 */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+nav{
+  background-color: #fff;
+  box-shadow: 0 0 10px #0000002f;
+  color: #333;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  z-index: 10;
+}
+nav .logo{
+  margin-left: 50px;
+  cursor: pointer;
+  font-weight: 700;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+  gap: 15px;
+}
+nav ul li a{
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 10px;
+}
+nav ul li a:hover{
+  font-weight: 600;
+  border-bottom: 3px solid rgb(255, 217, 81);
+}
+
+/* content */
+.content{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-y: auto;
+  background-color: #fff;
+  height: calc(100vh - 130px);
+}
+/* content-Home */
+.jonuralayout{
+  border: 1px solid #000;
+  margin: 40px;
+  padding: 2rem;
+  color: #333;
+  border-radius: 10px;
+  text-align: left;
+}
+.home p{
+  margin-bottom: 20px;
+} 
+.intro p{
+  margin-bottom: 20px;
+}
+.intro ul{
+  margin-bottom: 20px;
+}
+.intro ul li{
+  color: rgb(121, 121, 230);
+}
+.cta button{
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.cta button:hover{
+  background-color: #ddd;
+}
+/* content-posts */
+.postCard{
+  padding: 1rem;
+  border-radius: 8px;
+}
+.postCard h2{
+  margin-bottom: 5px;
+}
+.postCard p {
+  margin-bottom: 10px;
+  color: #666;
+}
+.likeBtn{
+  padding: 0 10px 0 0;
+}
+.likeBtn.liked{
+  color: crimson;
+}
+.postMeta .plus{
+  font-size: 14px;
+}
+/* content-profile */
+.profileHeader{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.profilePic img{
+  width: 150px;
+}
+.profileHeader span{
+  margin-left: 10px;
+  font-size: 14px;
+  color: rgb(121, 121, 230);
+  font-weight: 500;
+}
+.profileHeader h2{
+  margin-bottom: 10px;
+}
+/* content-profile */
+.postDetail h2,
+.postDetailContent h3{
+  margin-bottom: 5px;
+}
+.postDetail p,
+.postDetailContent p{
+  margin-bottom: 20px;
+}
+/* commentSection */
+.commentWrap{
+  margin-top: 20px;
+}
+.commentToggleBtn{
+  color: #666;
+  color: rgb(121, 121, 230);
+}
+.commentToggleBtn:hover{
+  text-decoration: underline;
+}
+.commentAddBtn{
+  border: 2px solid rgb(255, 217, 81);
+  padding: 3px 10px;
+  border-radius: 4px;
+  transition: all .2s ease;
+}
+.commentAddBtn:hover{
+  background-color: rgb(255, 217, 81);
+}
+input{
+  padding: 7px;
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+}
+.commentList{
+  margin: 15px 0;
+}
+.commentList li{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.editBtn{
+  color: rgb(88, 130, 223);
+  font-size: 14px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.deleteBtn{
+  font-size: 14px;
+  color: rgb(218, 44, 78);
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.reple{
+  display: flex;
+}
+.reple input{}
+.reple button{}
+
+/* Footer */
+.footer{
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
